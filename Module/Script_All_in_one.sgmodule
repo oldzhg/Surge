@@ -8,15 +8,16 @@ force-http-engine-hosts = %APPEND% vali.cp31.ott.cibntv.net
 [Rule]
 # > 京东  去启动广告
 URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-TINYGIF
-# > 哔哩哔哩 去广告
-DOMAIN,data.bilibili.com,REJECT 
+# > 哔哩哔哩 去广告 
 URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)),REJECT
 URL-REGEX,https://api.bilibili.com/x/v2/dm/ad,REJECT
 # > YouTube 去片头广告
 URL-REGEX,^https?:\/\/[\w-]+\.googlevideo\.com\/.+&(oad|ctier),REJECT-TINYGIF
 # > 知乎 去广告
+
 //SOME MCN INFO MAY BE USEFUL
 //URL-REGEX,https://www.zhihu.com/api/v4/mcn/,REJECT
+DOMAIN,appcloud2.zhihu.com,REJECT
 
 //DO NOT GET CDN-BASED IP
 DOMAIN,118.89.204.198,REJECT
@@ -286,7 +287,7 @@ Smh.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.co
 # Chavy box (多账号Cookie保存切换)
 # 访问: https://8.8.8.8/home管理
 Chavy box = type=http-request,pattern=^https://8.8.8.8/api,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/chavy.box.js,requires-body=true,max-size=0
-Chavy box = type=http-response,pattern=^https://8.8.8.8/(home|app|log\/),script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/chavy.box.js,requires-body=true,max-size=0
+Chavy box = type=http-response,pattern=^https://8.8.8.8/(home|sub|my|app|log\/),script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/chavy.box.js,requires-body=true,max-size=0
 
 # > Langkhach越南老哥
 # > all apps monkey
