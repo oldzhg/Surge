@@ -42,18 +42,6 @@ TestFlight公测监控 = script-path=https://raw.githubusercontent.com/songyangz
 # > 实时货币换算
 实时汇率 = type=cron,cronexp=35 5 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/exchangeRate.js,script-update-interval=0
 
-# > GitHub监控(By Peng-YM)
-GitHub监控= type=cron,cronexp=8 0 * * *,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/github.js
-
-# > Steam价格监控(By Peng-YM)
-# 1. 浏览器打开steam网站：https://store.steampowered.com/，搜索你想添加的游戏。
-# 2. 以GTA5为例，GTA5的STEAM商店链接为：https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/。
-# 3. id中填写271590即可, name中填写名字。
-Steam价格监控= type=cron,cronexp=8 0 * * *,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/steam.js
-
-# > 汇率监控(By Peng-YM)
-汇率监控= type=cron,cronexp=8 0 * * *,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/exchange.js
-
 # > Epic周免(By Peng-YM)
 Epic周免= type=cron,cronexp=0 8 */7 * *,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/epic.js
 
@@ -93,11 +81,7 @@ v2ex.js = type=cron,cronexp=30 1 0 * * *,script-path=https://raw.githubuserconte
 
 # > 腾讯新闻 (By 红鲤鱼与绿鲤鱼与驴 & Macsuny))
 # 打开腾讯新闻app，阅读一篇文章，右下角出现红包，倒计时结束后即可
-腾讯新闻 = type=cron,cronexp=0 */2 * * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews.js, script-update-interval=0, timeout=20
-
-# > 微信小程序-活动抽奖 (By @makexp & @zZPiglet)
-#打开微信小程序 进入“活动抽奖”，手动签到一次或点击“已签到”
-活动抽奖 = type=cron,cronexp=0 6 0 * * *,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/WeChatLottery_new.js
+腾讯新闻 = type=cron,cronexp=0 */2 * * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews.js, script-update-interval=0
 
 # > 滴滴出行 (By @zZPiglet)
 滴滴出行 = type=cron,cronexp=0 6 0 * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi.js
@@ -111,5 +95,5 @@ qq会员签到 = type=cron,cronexp=0 0 0,1 * * ?,wake-system=1,script-path=https
 
 # 电信营业厅
 # 打开 APP 手动签到一次: 访问下右下角 `我` > `签到` (头像下面)
-电信营业厅 = type=cron,cronexp=20 0 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.js,script-update-interval=0
+电信营业厅 = type=cron,cronexp=20 0 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.js, script-update-interval=0
 
