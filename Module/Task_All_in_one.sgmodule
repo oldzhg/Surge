@@ -93,7 +93,7 @@ v2ex.js = type=cron,cronexp=30 1 0 * * *,script-path=https://raw.githubuserconte
 
 # > 腾讯新闻 (By 红鲤鱼与绿鲤鱼与驴 & Macsuny))
 # 打开腾讯新闻app，阅读一篇文章，右下角出现红包，倒计时结束后即可
-腾讯新闻 = type=cron,cronexp=0 */2 * * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews.js,script-update-interval=0
+腾讯新闻 = type=cron,cronexp=0 */2 * * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews.js, script-update-interval=0, timeout=20
 
 # > 微信小程序-活动抽奖 (By @makexp & @zZPiglet)
 #打开微信小程序 进入“活动抽奖”，手动签到一次或点击“已签到”
