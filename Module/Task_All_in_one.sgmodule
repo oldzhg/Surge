@@ -6,7 +6,7 @@
 
 [Script]
 # > 天气+生活指数+降雨提醒
-天气+生活指数+降雨提醒= type=cron,cronexp=0 0-21/2 * * *,script-path=https://raw.githubusercontent.com/oldzhg/QuantumultX/master/Task/minute_forecast.js
+天气+生活指数+降雨提醒= type=cron,cronexp=0 0-21/4 * * *,script-path=https://raw.githubusercontent.com/oldzhg/QuantumultX/master/Task/minute_forecast.js
 
 # > App价格版本监控
 # 需要appid
@@ -99,5 +99,6 @@ qq会员签到 = type=cron,cronexp=0 0 0,1 * * ?,wake-system=1,script-path=https
 # 打开 APP 手动签到一次: 访问下右下角 `我` > `签到` (头像下面)
 电信营业厅 = type=cron,cronexp=20 0 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.js, script-update-interval=0
 
-# >惠头条 = type=cron,cronexp=0 */2 * * * *, wake-system=1 ,script-path=惠头条.js
+惠头条 = type=cron,cronexp=0 */2 * * * *, wake-system=1 ,script-path=惠头条.js
+
 惠头条type=cron,cronexp=*/2 0-11/1 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/htt_task.js
