@@ -8,10 +8,6 @@
 # > 天气+生活指数+降雨提醒
 天气+生活指数+降雨提醒= type=cron,cronexp=0 0-21/4 * * *,script-path=https://raw.githubusercontent.com/oldzhg/QuantumultX/master/Task/minute_forecast.js
 
-# > App价格版本监控
-# 需要appid
-# > App价格版本监控 = type=cron,cronexp=0 0 * * * *,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Neurogram-R/AppMonitor.js,script-update-interval=0
-
 # > 一言
 一言+历史上的今天 = script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Meeta/Surge/Scripting/Calendar.js,type=cron,cronexp=0 0 8 * * *
 
@@ -37,7 +33,7 @@
 TestFlight公测监控 = script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/testflight.js,type=cron,cronexp=0 0 * * * *
 
 # > 实时货币换算
-# > 实时汇率 = type=cron,cronexp=35 5 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/exchangeRate.js,script-update-interval=0
+实时汇率 = type=cron,cronexp=35 5 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/exchangeRate.js,script-update-interval=0
 
 # > Epic周免(By Peng-YM)
 Epic周免= type=cron,cronexp=0 8 */7 * *,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/epic.js
@@ -65,9 +61,6 @@ PSN会免= type=cron,cronexp=0 9 1 * *,script-path=https://raw.githubusercontent
 # 浏览器打开https://www.v2ex.com/mission/daily ，待弹出获取成功即可
 v2ex.js = type=cron,cronexp=30 1 */12 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/v2ex/v2ex.js,script-update-interval=0
 
-# > 中国移动-查话费
-# > 中国移动-查话费 = type=cron,cronexp=10 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.fee.js,wake-system=true
-
 # > 饿了么   (By @syzzzf)
 # 打开 APP, 访问下`我的`>`签到领红包`(左上角)
 饿了么 = type=cron,cronexp=35 4 0 * * *,script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemSign.js,script-update-interval=0
@@ -86,14 +79,13 @@ v2ex.js = type=cron,cronexp=30 1 */12 * * *,script-path=https://raw.githubuserco
 # > 滴滴出行 (By @zZPiglet)
 # 进入"滴滴出行"，若弹出"首次写入滴滴出行 Token 成功"
 滴滴出行 = type=cron,cronexp=0 6 0 * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi.js
-
 滴滴出行 = type=cron,cronexp=0 59 23 * * *,script-path=script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_reward.js
 
 # > 京东农场 (By liuxiaoyucc)
 京东农场= type=cron,cronexp=8 0 * * *,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/jd_fruit.js
 
 # > qq会员成长值签到 (By @lowking0415)
-qq会员签到 = type=cron,cronexp=0 0 0,1 * * ?,wake-system=1,script-path=https://raw.githubusercontent.com/lowking/Scripts/master/QQVip/qqVipCheckIn.js,script-update-interval=0
+qq会员签到 = type=cron,cronexp=0 0 0,1 * * ?,wake-system=1,script-path=https://raw.githubusercontent.com/lowking/Scripts/master/QQVip/qqVipCheckIn.js, script-update-interval=0
 
 # 电信营业厅
 # 打开 APP 手动签到一次: 访问下右下角 `我` > `签到` (头像下面)
