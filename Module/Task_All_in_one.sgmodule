@@ -44,6 +44,10 @@ PSN会免= type=cron,cronexp=0 9 1 * *,script-path=https://raw.githubusercontent
 # > 京东
 京东 = type=cron,cronexp=0 0 */12 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,script-update-interval=0
 
+# > 百度签到
+# 打开App,点击'我的'
+百度贴吧 = type=cron,cronexp="0 0,1,2,5 0 * * *",script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js,script-update-interval=0
+
 # > 爱奇艺
 爱奇艺 = type=cron,cronexp=5 0 0 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js,script-update-interval=0
 
@@ -67,14 +71,14 @@ v2ex.js = type=cron,cronexp=30 1 */12 * * *,script-path=https://raw.githubuserco
 饿了么-打卡领红包= type=cron,cronexp=35 4 0 * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/elem/elemCheckIn.js
 
 # > 切换会话
-切换会话 = type=cron,cronexp=0 */2 * * * *, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/switcher/box.switcher.js,wake-system=true
+切换会话 = type=cron,cronexp=0 */5 * * * *, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/switcher/box.switcher.js,wake-system=true
 
 # > 腾讯新闻 (By 红鲤鱼与绿鲤鱼与驴 & Macsuny))
 # 打开腾讯新闻app，阅读一篇文章，右下角出现红包，倒计时结束后即可
 #腾讯新闻 = type=cron,cronexp=0 */5 * * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews.js, script-update-interval=0
 #腾讯新闻 = type=cron,cronexp=0 */5 * * * *,script-path=Task/txnew12.js, script-update-interval=0
 
-腾讯新闻 = type=cron,cronexp=0 */2 * * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews2.js,script-update-interval=0
+腾讯新闻 = type=cron,cronexp=0 */5 * * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews.js,script-update-interval=0
 
 # > 万达电影
 万达电影 = type=cron,cronexp=10 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wanda/wanda.js,wake-system=true
